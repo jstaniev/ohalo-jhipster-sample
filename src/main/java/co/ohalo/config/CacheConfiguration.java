@@ -48,6 +48,18 @@ public class CacheConfiguration {
             createCache(cm, co.ohalo.domain.User.class.getName());
             createCache(cm, co.ohalo.domain.Authority.class.getName());
             createCache(cm, co.ohalo.domain.User.class.getName() + ".authorities");
+            createCache(cm, co.ohalo.domain.Region.class.getName());
+            createCache(cm, co.ohalo.domain.Country.class.getName());
+            createCache(cm, co.ohalo.domain.Location.class.getName());
+            createCache(cm, co.ohalo.domain.Department.class.getName());
+            createCache(cm, co.ohalo.domain.Department.class.getName() + ".employees");
+            createCache(cm, co.ohalo.domain.Task.class.getName());
+            createCache(cm, co.ohalo.domain.Task.class.getName() + ".jobs");
+            createCache(cm, co.ohalo.domain.Employee.class.getName());
+            createCache(cm, co.ohalo.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, co.ohalo.domain.Job.class.getName());
+            createCache(cm, co.ohalo.domain.Job.class.getName() + ".tasks");
+            createCache(cm, co.ohalo.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
