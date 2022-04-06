@@ -1,0 +1,8 @@
+services:
+  proxy:
+    container_name: reverse_proxy
+    hostname: nginx-proxy
+    build: ./proxy/
+    ports:
+      - 80:80
+      - 7419:7419
